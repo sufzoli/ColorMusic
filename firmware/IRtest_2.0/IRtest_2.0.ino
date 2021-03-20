@@ -3,7 +3,7 @@
 CHashIR IRLremote;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println(F("Startup"));
   if (!IRLremote.begin(pinIR))
     Serial.println(F("You did not choose a valid pin."));
